@@ -7,7 +7,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, defineProps } from 'vue';
+import {  computed, defineProps } from 'vue';
 
 const props = defineProps({
   iconColor: {
@@ -27,7 +27,7 @@ const props = defineProps({
 
 const Themetype = computed(() => props.iconColor);
 
-
+console.log(Themetype)
 </script>
 
 <style lang="scss" scoped>

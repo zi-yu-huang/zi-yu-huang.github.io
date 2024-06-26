@@ -32,6 +32,7 @@ const toContact = () => {
 const toTravel = () => {
   router.push("/travel");
 }
+console.log(toHome,toResume,toProfile,toContact,toTravel)
 </script>
 
 <style lang="scss" scoped>

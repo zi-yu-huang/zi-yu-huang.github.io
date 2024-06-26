@@ -20,6 +20,7 @@ components: {
 const iconColor = ref("secondary")
 const tagText = ref("Default Tag Text")
 const tagIcon =ref("user-secret")
+console.log(iconColor,tagText,tagIcon)
 </script>
 
 <style lang="scss" scoped>
