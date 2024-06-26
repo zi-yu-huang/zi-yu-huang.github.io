@@ -1,6 +1,6 @@
 <template lang="pug">
 #Index
-  img.img-title(src="@/assets/img/500704706730393764.jpg")
+  img.img-title(src="/src/assets/img/500704706730393764.jpg")
   h1 My Work
   Experience
 </template>

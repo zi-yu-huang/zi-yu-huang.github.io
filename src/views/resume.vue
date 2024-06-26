@@ -2,7 +2,7 @@
 //- 請填寫功能描述👈
 #Resume
   .title-area
-    img(src="@/assets/img/圖片 1.png")
+    img(src="/src/assets/img/圖片 1.png")
     .name-title 黃子瑜
   .content-area 
 
