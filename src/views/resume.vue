@@ -2,7 +2,7 @@
 //- 請填寫功能描述👈
 #Resume
   .title-area
-    img(src="/src/assets/img/圖片 1.png")
+    img(src="/src/assets/img/my.png")
     .name-title 黃子瑜
   .content-area 
 
@@ -15,7 +15,7 @@
 <style lang="scss" scoped>
 // 排版
 #Resume {
-  padding: 0px 350px;
+  padding: 0px 25%;
   .title-area{
     display: grid;
     grid-template-columns: auto 1fr;
