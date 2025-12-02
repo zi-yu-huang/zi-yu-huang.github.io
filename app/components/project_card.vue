@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { t } = useI18n(); 
+const { t } = useI18n();
 
 const props = defineProps<{
   project: {
@@ -14,7 +14,7 @@ const props = defineProps<{
 </script>
 <template>
   <div
-    class="flex flex-col gap-6 my-8 lg:grid  lg:grid-cols-2 lg:gap-8 lg:items-center lg:h-80 md:grid  md:grid-cols-2 md:gap-8 md:items-center md:h-80"
+    class="flex flex-col gap-6 my-8 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center lg:h-80 md:grid md:grid-cols-2 md:gap-8 md:items-center md:h-80"
   >
     <div class="flex flex-col gap-6">
       <p class="text-Secondary">{{ project.year }}</p>
@@ -31,12 +31,14 @@ const props = defineProps<{
       </div>
       <div>
         <a :href="project.link" target="_blank" class="font-bold"
-          >{{ t("link.view_project") }} <UIcon name="i-lucide-arrow-up-right"></UIcon
+          >{{ t("link.view_project") }}
+          <UIcon name="i-lucide-arrow-up-right"></UIcon
         ></a>
       </div>
     </div>
     <div class="w-full h-full lg:order-first">
       <img
+        loading="lazy"
         :src="project.image"
         :alt="project.title"
         class="aspect-4/3 w-full h-full"
