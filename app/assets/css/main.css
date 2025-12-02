@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+body {
+  background-color: var(--color-Background);
+}
+
+@theme static {
+  --color-Primary: #2e2e2e; /*  深炭黑 - 用於標題和主要文字 */
+  --color-Secondary: #735F42; /* 柔和橄欖/土色 - 用於強調 */
+  --color-Accent: #3b2a6e; /* 深海藍 - 用於互動元素 */
+  --color-Background: #fffaf3; /* 溫暖白色/紙張色 - 主背景 */
+  --color-Foreground: #1a1a1a; /* 柔和黑色 - 主文字色 */
+  --color-Border: #f5f5f5; /* 非常淡的邊框色 */
+  --color-Tag: #ECEADF;
+  --color-TagBorder: #D4CDC1;
+}
+
+[id] {
+  scroll-margin-top: 88px; /* 設為 header 的高度 + 額外間距，依實際 header 高度調整 */
+}
