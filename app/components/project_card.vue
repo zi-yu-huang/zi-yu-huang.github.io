@@ -1,9 +1,11 @@
 <script setup lang="ts">
+const { t } = useI18n(); 
+
 const props = defineProps<{
   project: {
     year: number;
     title: string;
-    description: string;
+    descriptionKey: string;
     link: string;
     image: string;
     tag: string[];
@@ -17,7 +19,7 @@ const props = defineProps<{
     <div class="flex flex-col gap-6">
       <p class="text-Secondary">{{ project.year }}</p>
       <p class="text-4xl font-bold">{{ project.title }}</p>
-      <p class="text-Secondary text-wrap">{{ project.description }}</p>
+      <p class="text-Secondary text-wrap">{{ $t(project.descriptionKey) }}</p>
       <div class="flex flex-wrap gap-2">
         <UBadge
           v-for="(item, index) in project.tag"
@@ -29,7 +31,7 @@ const props = defineProps<{
       </div>
       <div>
         <a :href="project.link" target="_blank" class="font-bold"
-          >View Project <UIcon name="i-lucide-arrow-up-right"></UIcon
+          >{{ t("link.view_project") }} <UIcon name="i-lucide-arrow-up-right"></UIcon
         ></a>
       </div>
     </div>

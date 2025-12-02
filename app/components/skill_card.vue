@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const { t } = useI18n(); 
+
 const frontendList = [
   "Vue2",
   "Vue3",
@@ -15,10 +17,9 @@ const backendList = ["Node.js", "Express.js", "MongoDB", "RESTful APIs"];
   <div class="grid gap-6">
     <div class="flex flex-col flex-wrap gap-6 mt-8">
       <UIcon class="size-6" name="i-lucide-code" />
-      <p class="text-3xl">Frontend</p>
+      <p class="text-3xl">{{ t("skills.frontend_title") }}</p>
       <p class="text-Secondary">
-        Specialized in building dynamic, responsive web interfaces with modern
-        Vue ecosystem
+        {{t("skills.frontend_desc")}}
       </p>
       <div class="flex gap-3 flex-wrap">
         <UBadge
@@ -32,10 +33,9 @@ const backendList = ["Node.js", "Express.js", "MongoDB", "RESTful APIs"];
     </div>
     <div class="flex flex-col flex-wrap gap-6 mt-8">
       <UIcon class="size-6" name="i-lucide-database" />
-      <p class="text-3xl">Backend</p>
+      <p class="text-3xl">{{ t("skills.backend_title") }}</p>
       <p class="text-Secondary">
-        Experience in building simple RESTful APIs and handling basic backend
-        services for frontend integration.
+        {{t("skills.backend_desc")}}
       </p>
       <div class="flex gap-3 flex-wrap">
         <UBadge

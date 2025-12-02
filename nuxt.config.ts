@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
-  modules: ["@nuxt/ui"],
+  modules: ["@nuxt/ui", "@nuxtjs/i18n"],
   css: ["~/assets/css/main.css"],
   ui: {},
   devServer: {
@@ -10,7 +10,24 @@ export default defineNuxtConfig({
     port: 3000,
   },
   app: {
-    baseURL: "/", // ← 你的 repo 名稱
+    baseURL: "/",
     buildAssetsDir: "/static/",
+  },
+  i18n: {
+    strategy: "prefix_except_default",
+    langDir: "locales",
+    locales: [
+      {
+        code: "en",
+        iso: "en-US",
+        file: "en.json",
+      },
+      {
+        code: "zh-tw",
+        iso: "zh-TW",
+        file: "zh-tw.json",
+      },
+    ],
+    defaultLocale: "zh-tw",
   },
 });

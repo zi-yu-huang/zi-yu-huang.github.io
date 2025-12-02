@@ -1,14 +1,19 @@
 <script setup lang="ts">
-import type { NavigationMenuItem } from "@nuxt/ui";
-
+// 引入 useI18n 來獲取語言切換的工具
+const { locale, setLocale, t } = useI18n(); 
 const route = useRoute();
 
 const navItems = computed(() => [
-  { label: "About", id: "about" },
-  { label: "Work", id: "work" },
-  { label: "Skill", id: "skill" },
-  { label: "Contact", id: "contact" },
+  { label: t('nav.about'), id: "about" },
+  { label: t('nav.work'), id: "work" },
+  { label: t('nav.skill'), id: "skill" },
+  { label: t('nav.contact'), id: "contact" },
 ]);
+
+function toggleLocale() {
+  const newLocale = locale.value === 'zh-tw' ? 'en' : 'zh-tw';
+    setLocale(newLocale);
+}
 
 function scrollToId(id: string) {
   const el = document.getElementById(id);
@@ -16,6 +21,7 @@ function scrollToId(id: string) {
     el.scrollIntoView({ behavior: "smooth", block: "start" });
     return;
   }
+  // 這裡假設您的路由結構不需要特別處理 i18n 前綴，Nuxt i18n 會自動處理
   const pathWithHash = `${route.path.split("#")[0]}#${id}`;
   void useRouter().push(pathWithHash);
 }
@@ -24,10 +30,11 @@ function scrollToId(id: string) {
 <template>
   <UHeader
     :toggle="false"
-    class="bg-[#FDF9F2]"
+    class="bg-[#FDF9F2] sticky top-0 z-50"
     style="border-bottom: 1px solid #dedede"
   >
     <template #title>
+      <!-- 履歷名稱或 Logo (可考慮加入翻譯鍵值) -->
       <p class="h-6 w-auto">Febe Huang</p>
     </template>
 
@@ -35,28 +42,34 @@ function scrollToId(id: string) {
       <button
         v-for="item in navItems"
         :key="item.id"
-        class="text-Primary hover:text-Accent whitespace-nowrap"
+        class="text-neutral-600 hover:text-blue-600 whitespace-nowrap transition-colors duration-200"
         @click="scrollToId(item.id)"
       >
+        <!-- 這裡是已經翻譯過的 label -->
         {{ item.label }}
       </button>
     </nav>
 
     <template #right>
+      <!-- 語言切換按鈕 -->
       <UButton
         color="neutral"
         variant="ghost"
-        to="https://github.com/zi-yu-huang"
-        target="_blank"
         icon="i-lucide-languages"
-        aria-label="GitHub"
-      />
+        :aria-label="`Switch to ${locale === 'en' ? '繁體中文' : 'English'}`"
+        @click="toggleLocale"
+      >
+        <!-- 顯示當前語言的對應名稱 (例如: EN 或 中文) -->
+        {{ locale === 'en' ? 'EN' : '中' }}
+      </UButton>
+      
+      <!-- 履歷下載連結 -->
       <a
         download="Febe_resume.pdf"
-        class="text-neutral-500 hover:text-neutral-700"
+        class="text-neutral-500 hover:text-neutral-700 transition-colors duration-200"
         href="/Febe_resume.pdf"
-        aria-label="Resume"
-        >Resume</a
+        aria-label="Resume Download"
+        > {{ $t('resume') }}</a
       >
     </template>
   </UHeader>

@@ -1,8 +1,11 @@
+<script setup lang="ts">
+const { t } = useI18n();
+</script>
 <template>
   <div id="contact" class="my-35">
     <div class="grid gap-4 pb-4" style="border-bottom: 1px solid #dedede">
-      <p class="text-Primary text-4xl">Get In Touch</p>
-      <p>Feel free to reach out through any of these channels</p>
+      <p class="text-Primary text-4xl">{{ $t("sections.get_in_touch") }}</p>
+      <p>{{ $t("sections.get_in_touch_desc") }}</p>
     </div>
     <div
       class="my-8 flex flex-col lg:flex-row lg:flex lg:justify-between gap-6"

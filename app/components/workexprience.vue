@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import WoekexprienceList from "../../mock/workexprience_list.js";
-
+const { t } = useI18n();
 </script>
 
 <template>
@@ -14,16 +14,16 @@ import WoekexprienceList from "../../mock/workexprience_list.js";
       <div class="flex justify-between mb-4">
         <div class="flex flex-col">
           <p class="text-xl">
-            {{ item.position }}
+            {{ t(item.position) }}
           </p>
-          <p class="text-Secondary">{{ item.company }}</p>
+          <p class="text-Secondary">{{ t(item.company) }}</p>
         </div>
         <p class="text-Secondary">
           {{ item.year }}
         </p>
       </div>
       <div class="my-4">
-        <p>{{ item.description }}</p>
+        <p>{{ t(item.description) }}</p>
       </div>
       <div class="flex flex-wrap gap-2">
         <UBadge

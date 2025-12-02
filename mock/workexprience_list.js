@@ -1,18 +1,16 @@
 const experience = [
   {
     year: "2024.02 - 2024.06",
-    position: "Frontend Intern",
-    company: "Cathay Life Insurance",
-    description:
-      "- Migrated legacy HTML webpages into Vue2 components and assisted in frontend deployment and UI maintenance.",
+    position: "experience.role_1",
+    company: "experience.company_1",
+    description: "experience.desc_1",
     tag: ["Vue.js", "TypeScript", "Tailwind CSS"],
   },
   {
     year: "2022.02 – 2022.06",
-    position: "Frontend Intern",
-    company: "Tyr Technology",
-    description:
-      "Built frontend UI with Vue.js and SCSS, collaborating with backend engineers to integrate APIs.",
+    position: "experience.role_2",
+    company: "experience.company_2",
+    description: "experience.desc_2",
     tag: ["React", "JavaScript", "CSS3"],
   },
 ];
