@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     port: 3000,
   },
   app: {
-    baseURL: "/zi-yu-huang/", // ← 你的 repo 名稱
+    baseURL: "/zi-yu-huang.io/", // ← 你的 repo 名稱
     buildAssetsDir: "/static/",
   },
 });
