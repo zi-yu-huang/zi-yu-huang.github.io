@@ -14,6 +14,7 @@ export default defineNuxtConfig({
     buildAssetsDir: "/static/",
   },
   i18n: {
+    langDir: "locales",
     strategy: "no_prefix",
     locales: [
       {
