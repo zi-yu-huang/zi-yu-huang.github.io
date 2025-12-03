@@ -7,8 +7,9 @@
   },
   "resume": "Resume",
   "header": {
+    "name": "Febe Huang",
     "title": "Frontend Engineer / Full-Stack Developer",
-    "greeting": "Hi, I'm Febe. I'm a frontend-focused engineer who builds interactive web experiences. I specialize in Vue.js and Nuxt, focusing on clean architecture and performance optimization."
+    "greeting": "Hi, I'm Febe, a junior frontend developer specializing in Vue.js and Nuxt.I focus on building high-performance, user-friendly web applications with clean structure and smooth interactions.With experience in frontend and backend integration, I am passionate about improving user experience and continuously refining my technical skills."
   },
   "link": {
     "view_work": "View Work",
@@ -18,58 +19,41 @@
   },
   "sections": {
     "featured_projects": "Featured Projects",
-    "technical_skills_desc": "A focused set of technologies I work with daily",
+    "technical_skills_desc": "Core technologies I use regularly in development.",
     "technical_skills": "Technical Skills",
     "about_me": "About Me",
     "about_me_desc": "Junior Frontend Engineer",
     "get_in_touch": "Get in Touch",
-    "get_in_touch_desc": "Feel free to reach out through any of these channels"
+    "get_in_touch_desc": "Feel free to reach out to me through the following platforms"
   },
   "skills": {
     "frontend_title": "Frontend",
-    "frontend_desc": "Proficient in building dynamic, responsive user interfaces and seamless user experiences.",
+    "frontend_desc": "Experienced in building responsive and interactive user interfaces using modern frontend frameworks and styling tools.",
     "backend_title": "Backend",
-    "backend_desc": "Experienced in building the data layers required by various applications and connecting them to the frontend.",
-    "tools_and_versioning": "Tools & Versioning",
-    "tech_stack": {
-      "html_css_scss": "HTML / CSS / SCSS",
-      "javascript": "JavaScript (ES6+)",
-      "vue": "Vue2 / Vue3 / Nuxt",
-      "tailwind_ant": "Tailwind / Ant Design",
-      "gsap": "GSAP",
-      "node": "Node.Js",
-      "mongodb": "MongoDB",
-      "git": "Git / Flow",
-      "react_bootstrap": "React / Bootstrap CSS"
-    }
+    "backend_desc": "Capable of building APIs, handling server-side logic, and managing databases."
   },
   "experience": {
     "date_1": "2024/2 - 2024/6",
     "date_2": "2022/2 - 2022/6",
     "company_1": "Cathay Life Insurance Co.",
     "role_1": "Frontend Intern",
-    "desc_1": "Refactored existing native HTML sites to Vue 2 architecture, responsible for component modularization, data binding, and deployment.",
-    "company_2": "Tire Technology Co.",
+    "desc_1": "Worked on converting UI designs into Vue components and building responsive layouts. Collaborated with designers and backend developers to integrate APIs and improve overall user experience using TypeScript and Tailwind CSS.",
+    "company_2": "Tyr Technology Co.",
     "role_2": "Frontend Intern",
-    "desc_2": "Developed frontend using Vue.js and SCSS, and assisted backend development with API integration."
+    "desc_2": "Developed frontend interfaces using Vue.js and SCSS, and integrated them with RESTful APIs for dynamic data display. Participated in the development of company websites and internal systems."
   },
   "projects": {
     "project_1_title": "NewZealand Travel Guide | 2025",
-    "project_1_desc": "Personal travel content website, featuring RWD design. Built with Vue3, Nuxt, Tailwind, and GSAP. Responsible for UI design, frontend slicing, and documentation.",
+    "project_1_desc": "A travel information website focused on New Zealand tourism, providing destination highlights and travel planning features.Built with Nuxt 3 and Tailwind CSS, and enhanced with GSAP animations to create smooth and engaging user interactions.The project supports SEO optimization, dynamic routing, and multilingual architecture.",
     "project_2_title": "GarboGo | 2023",
-    "project_2_desc": "Real-time garbage reporting and response application (Mobile first). Used Vue2, Ant Design, Node.js, and MongoDB. Integrated Google Map API for garbage collection route planning. Developed custom backend API for server-side logic."
+    "project_2_desc": "A full-stack web application integrating garbage classification and location-based search.The backend is built with Node.js and Express, using MongoDB as the database, and integrated with the Google Maps API for location services.The frontend handles UI design, API integration, and full CRUD functionality."
   },
   "about": {
     "about_me": "About Me",
     "title": "Junior Frontend Engineer",
     "education_title": "Education",
-    "education_desc": "Imformation Management",
+    "education_desc": "Department of Information Management",
     "school": "National Taichung University of Science and Technology ｜ Graduated:  2020",
-    "des": "I am a junior frontend engineer specializing in Vue and Nuxt, with experience in building responsive websites, animation effects, and integrating APIs. I enjoy transforming design into real, interactive products and continuously improving UI performance and user experience. I also have basic backend experience with Node.js and MongoDB, which helps me better collaborate in full-stack projects."
-  },
-  "contact": {
-    "email": "Email Me",
-    "linkedin": "LinkedIn Profile",
-    "github": "GitHub Repositories"
+    "des": "I am a passionate frontend developer with hands-on experience in Vue and Nuxt for building dynamic web applications.I value clean code, maintainable architecture, and efficient collaboration.My goal is to continuously improve my technical skills through real-world projects and contribute to meaningful products."
   }
 }

@@ -18,7 +18,7 @@ const backendList = ["Node.js", "Express.js", "MongoDB", "RESTful APIs"];
     <div class="flex flex-col flex-wrap gap-6 mt-8">
       <UIcon class="size-6" name="i-lucide-code" />
       <p class="text-3xl">{{ t("skills.frontend_title") }}</p>
-      <p class="text-Secondary">
+      <p class="text-Secondary dark:text-TagBorder">
         {{t("skills.frontend_desc")}}
       </p>
       <div class="flex gap-3 flex-wrap">
@@ -34,7 +34,7 @@ const backendList = ["Node.js", "Express.js", "MongoDB", "RESTful APIs"];
     <div class="flex flex-col flex-wrap gap-6 mt-8">
       <UIcon class="size-6" name="i-lucide-database" />
       <p class="text-3xl">{{ t("skills.backend_title") }}</p>
-      <p class="text-Secondary">
+      <p class="text-Secondary dark:text-TagBorder">
         {{t("skills.backend_desc")}}
       </p>
       <div class="flex gap-3 flex-wrap">

@@ -9,7 +9,7 @@ const { t } = useI18n();
     class="flex justify-between pb-4"
     style="border-bottom: 1px solid #dedede"
   >
-    <p class="text-4xl text-Primary">{{ t("sections.featured_projects") }}</p>
+    <p class="text-4xl text-Primary dark:text-Background">{{ t("sections.featured_projects") }}</p>
     <UButton
       href="https://github.com/zi-yu-huang"
       target="_blank"

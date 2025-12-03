@@ -4,7 +4,7 @@ const { t } = useI18n();
 <template>
   <div id="contact" class="my-35">
     <div class="grid gap-4 pb-4" style="border-bottom: 1px solid #dedede">
-      <p class="text-Primary text-4xl">{{ $t("sections.get_in_touch") }}</p>
+      <p class="text-Primary text-4xl dark:text-Background">{{ $t("sections.get_in_touch") }}</p>
       <p>{{ $t("sections.get_in_touch_desc") }}</p>
     </div>
     <div
@@ -14,7 +14,7 @@ const { t } = useI18n();
       <a href="mailto:febehuang07@gmail.com">
         <div class="border-style px-5 py-5 flex flex-col items-center gap-4">
           <div
-            class="bg-Tag w-[60px] h-[60px] flex items-center justify-center"
+            class="bg-Tag w-[60px] h-[60px] flex items-center justify-center "
           >
             <UIcon
               name="i-lucide-mail"
@@ -109,5 +109,10 @@ const { t } = useI18n();
 
 .border-style:hover .icon-link {
   opacity: 1;
+}
+
+html.dark .border-style {
+  background-color: black; /* 深色模式下的背景 */
+  color: white;            /* 深色模式下的文字顏色 */
 }
 </style>

@@ -4,8 +4,8 @@ const { t } = useI18n();
 </script>
 <template>
   <div id="about" class="my-20">
-    <p class="text-Secondary">{{ $t('header.title') }}</p>
-    <p class="text-Primary text-3xl py-5">Febe Huang</p>
+    <p class="text-Secondary dark:text-TagBorder">{{ $t('header.title') }}</p>
+    <p class="text-Primary text-3xl py-5 dark:text-Background">{{ t("header.name") }}</p>
     <p>
       {{ $t('header.greeting') }}
     </p>

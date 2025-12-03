@@ -1,9 +1,6 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
-body {
-  background-color: var(--color-Background);
-}
 
 @theme static {
   --color-Primary: #2e2e2e; /*  深炭黑 - 用於標題和主要文字 */

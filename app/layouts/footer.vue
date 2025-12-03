@@ -8,7 +8,7 @@ import type { NavigationMenuItem } from "@nuxt/ui";
     <UFooter>
       <template #default>
         <p class="text-muted text-sm">
-          Copyright © {{ new Date().getFullYear() }}
+          Copyright © {{ new Date().getFullYear() }} Huang Tzu-Yu. All rights reserved.
         </p>
       </template>
     </UFooter>

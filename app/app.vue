@@ -8,14 +8,21 @@ import TouchSection from "./components/touch_section.vue";
 import Footer from "./layouts/footer.vue";
 </script>
 <template>
-  <Header />
-  <div class="m-5 lg:max-w-[800px] lg:mx-auto">
-    <HeroSection />
-    <ProjectSection />
-    <SkillSection />
-    <AboutMe />
-    <TouchSection />
-  </div>
+  <div class="bg-Background dark:bg-[#0D060F]">
+    <Header />
+    <div class="m-5 lg:max-w-[800px] lg:mx-auto">
+      <HeroSection />
+      <ProjectSection />
+      <SkillSection />
+      <AboutMe />
+      <TouchSection />
+    </div>
 
-  <Footer />
+    <Footer />
+  </div>
 </template>
+<style>
+body {
+  /* background-color: var(--color-Background); */
+}
+</style>

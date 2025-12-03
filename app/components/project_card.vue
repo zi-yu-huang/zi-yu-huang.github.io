@@ -14,12 +14,12 @@ const props = defineProps<{
 </script>
 <template>
   <div
-    class="flex flex-col gap-6 my-8 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center lg:h-80 md:grid md:grid-cols-2 md:gap-8 md:items-center md:h-80"
+    class="flex flex-col gap-6 my-10 h-full lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center  md:grid md:grid-cols-2 md:gap-8 md:items-center"
   >
-    <div class="flex flex-col gap-6">
-      <p class="text-Secondary">{{ project.year }}</p>
+    <div class="flex flex-col gap-6 h-full">
+      <p class="text-Secondary dark:text-TagBorder">{{ project.year }}</p>
       <p class="text-4xl font-bold">{{ project.title }}</p>
-      <p class="text-Secondary text-wrap">{{ $t(project.descriptionKey) }}</p>
+      <p class="text-Secondary text-wrap dark:text-Background">{{ $t(project.descriptionKey) }}</p>
       <div class="flex flex-wrap gap-2">
         <UBadge
           v-for="(item, index) in project.tag"

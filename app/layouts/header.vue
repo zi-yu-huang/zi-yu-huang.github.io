@@ -1,18 +1,18 @@
 <script setup lang="ts">
 // 引入 useI18n 來獲取語言切換的工具
-const { locale, setLocale, t } = useI18n(); 
+const { locale, setLocale, t } = useI18n();
 const route = useRoute();
 
 const navItems = computed(() => [
-  { label: t('nav.about'), id: "about" },
-  { label: t('nav.work'), id: "work" },
-  { label: t('nav.skill'), id: "skill" },
-  { label: t('nav.contact'), id: "contact" },
+  { label: t("nav.about"), id: "about" },
+  { label: t("nav.work"), id: "work" },
+  { label: t("nav.skill"), id: "skill" },
+  { label: t("nav.contact"), id: "contact" },
 ]);
 
 function toggleLocale() {
-  const newLocale = locale.value === 'zh-tw' ? 'en' : 'zh-tw';
-    setLocale(newLocale);
+  const newLocale = locale.value === "zh-tw" ? "en" : "zh-tw";
+  setLocale(newLocale);
 }
 
 function scrollToId(id: string) {
@@ -30,22 +30,21 @@ function scrollToId(id: string) {
 <template>
   <UHeader
     :toggle="false"
-    class="bg-[#FDF9F2] sticky top-0 z-50"
+    class=" sticky top-0 z-50 "
     style="border-bottom: 1px solid #dedede"
   >
     <template #title>
       <!-- 履歷名稱或 Logo (可考慮加入翻譯鍵值) -->
-      <p class="h-6 w-auto">Febe Huang</p>
+      <!-- <p class="h-6 w-auto">Febe Huang</p> -->
     </template>
 
     <nav class="hidden lg:flex gap-6 items-center">
       <button
         v-for="item in navItems"
         :key="item.id"
-        class="text-neutral-600 hover:text-blue-600 whitespace-nowrap transition-colors duration-200"
+        class="text-neutral-600 whitespace-nowrap transition-colors duration-200 dark:text-neutral-200"
         @click="scrollToId(item.id)"
       >
-        <!-- 這裡是已經翻譯過的 label -->
         {{ item.label }}
       </button>
     </nav>
@@ -60,16 +59,18 @@ function scrollToId(id: string) {
         @click="toggleLocale"
       >
         <!-- 顯示當前語言的對應名稱 (例如: EN 或 中文) -->
-        {{ locale === 'en' ? 'EN' : '中' }}
+        {{ locale === "en" ? "中" : "EN" }}
       </UButton>
-      
+      <UColorModeButton />
       <!-- 履歷下載連結 -->
       <a
         download="Febe_resume.pdf"
-        class="text-neutral-500 hover:text-neutral-700 transition-colors duration-200"
+        class="text-neutral-800 hover:text-neutral-700 transition-colors duration-200 dark:text-Background"
         href="/Febe_resume.pdf"
         aria-label="Resume Download"
-        > {{ $t('resume') }}</a
+
+      >
+        {{ $t("resume") }}</a
       >
     </template>
   </UHeader>
