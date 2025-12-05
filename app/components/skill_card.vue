@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { t } = useI18n(); 
+const { t } = useI18n();
 
 const frontendList = [
   "Vue2",
@@ -11,6 +11,13 @@ const frontendList = [
   "GSAP",
 ];
 const backendList = ["Node.js", "Express.js", "MongoDB", "RESTful APIs"];
+// const softskillList = [
+//   "團隊溝通能力",
+//   "主動學習能力",
+//   "問題解決能力",
+//   "抗壓性",
+//   "時間管理",
+// ];
 </script>
 
 <template>
@@ -19,7 +26,7 @@ const backendList = ["Node.js", "Express.js", "MongoDB", "RESTful APIs"];
       <UIcon class="size-6" name="i-lucide-code" />
       <p class="text-3xl">{{ t("skills.frontend_title") }}</p>
       <p class="text-Secondary dark:text-TagBorder">
-        {{t("skills.frontend_desc")}}
+        {{ t("skills.frontend_desc") }}
       </p>
       <div class="flex gap-3 flex-wrap">
         <UBadge
@@ -35,7 +42,7 @@ const backendList = ["Node.js", "Express.js", "MongoDB", "RESTful APIs"];
       <UIcon class="size-6" name="i-lucide-database" />
       <p class="text-3xl">{{ t("skills.backend_title") }}</p>
       <p class="text-Secondary dark:text-TagBorder">
-        {{t("skills.backend_desc")}}
+        {{ t("skills.backend_desc") }}
       </p>
       <div class="flex gap-3 flex-wrap">
         <UBadge

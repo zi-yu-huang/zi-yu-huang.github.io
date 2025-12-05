@@ -2,10 +2,10 @@
 const { t } = useI18n();
 </script>
 <template>
-  <div id="contact" class="my-35">
+  <div id="contact" class="my-25">
     <div class="grid gap-4 pb-4" style="border-bottom: 1px solid #dedede">
       <p class="text-Primary text-4xl dark:text-Background">{{ $t("sections.get_in_touch") }}</p>
-      <p>{{ $t("sections.get_in_touch_desc") }}</p>
+      <p class="text-Secondary  dark:text-TagBorder">{{ $t("sections.get_in_touch_desc") }}</p>
     </div>
     <div
       class="my-8 flex flex-col lg:flex-row lg:flex lg:justify-between gap-6"

@@ -5,8 +5,8 @@ const route = useRoute();
 
 const navItems = computed(() => [
   { label: t("nav.about"), id: "about" },
-  { label: t("nav.work"), id: "work" },
   { label: t("nav.skill"), id: "skill" },
+  { label: t("nav.work"), id: "work" },
   { label: t("nav.contact"), id: "contact" },
 ]);
 

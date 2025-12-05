@@ -4,8 +4,17 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <div>
+  <div id="work" class="my-25">
+    <div class="grid gap-4 pb-4" style="border-bottom: 1px solid #dedede">
+      <p class="text-Primary text-4xl dark:text-Background">
+        {{ t("sections.work") }}
+      </p>
+      <p class="text-Secondary dark:text-TagBorder">
+        {{ t("sections.work_desc") }}
+      </p>
+    </div>
     <div
+      <div
       v-for="(item, index) in WoekexprienceList"
       :key="index"
       class="my-16 pl-4 py-5 border-style"
@@ -23,11 +32,11 @@ const { t } = useI18n();
         </p>
       </div>
       <div class="my-4">
-        <p>{{ t(item.description) }}</p>
+        <p v-html="t(item.description)"></p>
       </div>
       <div class="flex flex-wrap gap-2">
         <UBadge
-          v-for="(t,index) in item.tag"
+          v-for="(t, index) in item.tag"
           :key="index"
           class="bg-Tag text-Secondary px-2 py-1 font-bold rounded-full"
           >{{ t }}</UBadge
