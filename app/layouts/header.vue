@@ -25,17 +25,26 @@ function scrollToId(id: string) {
   const pathWithHash = `${route.path.split("#")[0]}#${id}`;
   void useRouter().push(pathWithHash);
 }
+const goHome = () => {
+  window.location.href = "https://zi-yu-huang.github.io/";
+};
 </script>
 
 <template>
   <UHeader
     :toggle="false"
-    class=" sticky top-0 z-50 "
+    class="sticky top-0 z-50"
     style="border-bottom: 1px solid #dedede"
   >
     <template #title>
-      <!-- 履歷名稱或 Logo (可考慮加入翻譯鍵值) -->
-      <!-- <p class="h-6 w-auto">Febe Huang</p> -->
+      <div @click="goHome" class="cursor-pointer flex items-end gap-1.5">
+        <img
+          src="/images/myLogo.png"
+          alt="Logo"
+          loading="lazy"
+          class="w-[100px]"
+        />
+      </div>
     </template>
 
     <nav class="hidden lg:flex gap-6 items-center">
@@ -68,7 +77,6 @@ function scrollToId(id: string) {
         class="text-neutral-800 hover:text-neutral-700 transition-colors duration-200 dark:text-Background"
         href="/Febe_resume.pdf"
         aria-label="Resume Download"
-
       >
         {{ $t("resume") }}</a
       >
