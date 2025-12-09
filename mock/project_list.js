@@ -1,4 +1,4 @@
-import newzealand from "/images/newzealand.png";
+import newzealand from "/images/newzealand.webp";
 import GarboGo from "/images/garbogo.png";
 
 const project_list = [
@@ -8,7 +8,7 @@ const project_list = [
     descriptionKey: "projects.project_1_desc",
      link: "https://zi-yu-huang.github.io/NewZealand",
     image: newzealand,
-    tag: ["Nuxt 3", "Vue3", "Tailwind CSS", "GSAP"],
+    tag: ["Nuxt3", "Vue3", "Tailwind CSS", "GSAP","Mistral AI"],
   },
   {
     year: 2023,
@@ -17,7 +17,7 @@ const project_list = [
     link: "https://zi-yu-huang.github.io/GarboGo_",
     image: GarboGo,
     tag: [
-      "Nuxt 2",
+      "Nuxt2",
       "Vue2",
       "Scss",
       "Node.js",

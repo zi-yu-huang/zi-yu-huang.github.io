@@ -11,13 +11,7 @@ const frontendList = [
   "GSAP",
 ];
 const backendList = ["Node.js", "Express.js", "MongoDB", "RESTful APIs"];
-// const softskillList = [
-//   "團隊溝通能力",
-//   "主動學習能力",
-//   "問題解決能力",
-//   "抗壓性",
-//   "時間管理",
-// ];
+
 </script>
 
 <template>

@@ -58,7 +58,7 @@
   },
   "projects": {
     "project_1_title": "NewZealand Travel | Personal Travel Content Website | 2025",
-    "project_1_desc": "A travel-themed informational website focusing on New Zealand, offering tourist spot introductions, itinerary planning, and travel information integration.\n The project uses Nuxt 3 and Tailwind CSS for construction, paired with GSAP for animation effects to enhance interactive experience and visual fluidity.",
+    "project_1_desc": "A travel-themed informational website focusing on New Zealand, offering tourist spot introductions, itinerary planning, and travel information integration.\n The project uses Nuxt 3 and Tailwind CSS for construction, paired with GSAP for animation effects to enhance interactive experience and visual fluidity. \n Additionally, the site features a chatbot that can answer users’ travel questions in real time and provide personalized itinerary suggestions, making trip planning more convenient and engaging.",
     "project_2_title": "GarboGo | Real-Time Garbage Bin Reporting System | 2023",
     "project_2_desc": "A full-stack project combining waste classification and map search functionalities.\n Node.js and Express were used to build the backend API, MongoDB served as the database, and the Google Maps API was integrated for location querying.\n The frontend was responsible for interface design and data integration, implementing full CRUD functionality."
   },

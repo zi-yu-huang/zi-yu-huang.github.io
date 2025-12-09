@@ -32,7 +32,7 @@ const { t } = useI18n();
         </p>
       </div>
       <div class="my-4">
-        <p v-html="t(item.description)"></p>
+        <p>{{ t(item.description) }}</p>
       </div>
       <div class="flex flex-wrap gap-2">
         <UBadge

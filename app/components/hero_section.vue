@@ -15,7 +15,7 @@ const { t } = useI18n();
         trailing-icon="i-lucide-arrow-up-right"
         variant="link"
         style="border-bottom: 1px solid black; border-radius: 0%"
-        ><a href="#work">{{ $t('link.view_work') }}</a></UButton
+        ><a href="#project">{{ $t('link.view_work') }}</a></UButton
       >
       <UButton
         class="mt-4 text-[Accent] hover:text-Secondary active:text-Secondary dark:text-white"
