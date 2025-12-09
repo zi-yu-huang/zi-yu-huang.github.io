@@ -42,7 +42,7 @@ const goHome = () => {
           src="/images/myLogo.png"
           alt="Logo"
           loading="lazy"
-          class="w-[100px]"
+          class="w-10"
         />
       </div>
     </template>

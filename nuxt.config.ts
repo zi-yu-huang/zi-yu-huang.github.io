@@ -12,6 +12,13 @@ export default defineNuxtConfig({
   app: {
     baseURL: "/",
     buildAssetsDir: "/static/",
+    head: {
+      title: "Febe's Website", // 設置預設網頁標題
+      link: [
+        // 設置 Favicon，文件應放在 public/favicon.ico
+        { rel: 'icon', type: 'image/x-icon', href: '/myLogo.png' } 
+      ]
+    }
   },
   i18n: {
     langDir: "locales",
