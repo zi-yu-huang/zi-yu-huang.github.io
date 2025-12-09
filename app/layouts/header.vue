@@ -39,7 +39,7 @@ const goHome = () => {
     <template #title>
       <div @click="goHome" class="cursor-pointer flex items-end gap-1.5">
         <img
-          src="/images/myLogo.png"
+          src="/images/LogoHeader.png"
           alt="Logo"
           loading="lazy"
           class="w-10"
