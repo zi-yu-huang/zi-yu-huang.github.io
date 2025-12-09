@@ -3,7 +3,7 @@ const { t } = useI18n();
 
 </script>
 <template>
-  <div id="about" class="my-25">
+  <div class="my-25">
     <p class="text-Secondary dark:text-TagBorder">{{ $t('header.title') }}</p>
     <p class="text-Primary text-3xl py-5 dark:text-Background">{{ t("header.name") }}</p>
     <p>
