@@ -14,7 +14,6 @@ const { t } = useI18n();
       </p>
     </div>
     <div
-      <div
       v-for="(item, index) in WoekexprienceList"
       :key="index"
       class="my-16 pl-4 py-5 border-style"
