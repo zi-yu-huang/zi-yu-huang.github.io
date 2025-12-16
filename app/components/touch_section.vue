@@ -74,7 +74,7 @@ const { t } = useI18n();
             />
           </div>
           <p>Linkedin</p>
-          <p>linkedin.com/in/子瑜-黃-613ba41aa/</p>
+          <p>linkedin.com/in/febehuang/</p>
           <div class="icon-link">
             <UIcon
               name="i-lucide-external-link"
