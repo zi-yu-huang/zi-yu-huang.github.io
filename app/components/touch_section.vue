@@ -59,7 +59,7 @@ const { t } = useI18n();
         </div>
       </a>
       <!-- Linkedin --><a
-        href="https://linkedin.com/in/子瑜-黃-613ba41aa/"
+        href="https://linkedin.com/in/febehuang/"
         target="_blank"
         rel="noopener noreferrer"
       >
