@@ -4,7 +4,7 @@ const experience = [
     position: "experience.role_1",
     company: "experience.company_1",
     description: "experience.desc_1",
-    tag: ["Vue3","Vue2", "JavaScript", "Java","Java Unit Test"],
+    tag: ["Vue3","Vue2", "JavaScript", "Java","JUnit"],
   },
   {
     year: "2022.02 – 2022.06",
