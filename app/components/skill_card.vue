@@ -9,6 +9,7 @@ const frontendList = [
   "Tailwind CSS",
   "SCSS",
   "GSAP",
+  "i18n"
 ];
 const backendList = ["Node.js", "Express.js", "MongoDB", "RESTful APIs"];
 
